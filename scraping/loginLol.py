@@ -8,3 +8,11 @@ loginBtn = driver.find_element_by_xpath(
 ) # 롤페이지 로그인 버튼
 
 loginBtn.click() # 클릭
+
+usernameInput = driver.find_element_by_name("username")
+passwordInput = driver.find_element_by_name("password")
+authBtn = driver.find_element_by_xpath("/html/body/div/div/div/div[2]/div/div/button")
+
+usernameInput.send_keys("test") # 값 입력
+passwordInput.send_keys("test") # 값 입력
+authBtn.click() # 로그인 버튼 클릭
